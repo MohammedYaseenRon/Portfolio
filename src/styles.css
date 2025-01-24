@@ -1,0 +1,8 @@
+.icon-box::before {
+    content: "";
+    position: absolute;
+    inset: 0.75px; /* shorthand for top, right, bottom, left */
+    background: #202022; /* make sure this CSS variable is defined in your styles */
+    border-radius: inherit;
+    z-index: -1;
+  }
