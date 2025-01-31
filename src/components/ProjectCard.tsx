@@ -12,24 +12,24 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    name: "The Log",
+    name: "Fitness Tracking Web Application",
     category: "Web Development",
-    image: "/placeholder.svg?height=200&width=300",
-    githubUrl: "https://github.com/example/the-log"
+    image: "/Fitness.png?height=200&width=300",
+    githubUrl: "https://github.com/MohammedYaseenRon/fitness-trakcer-app"
   },
   {
     id: 2,
-    name: "CocktailsDB",
+    name: "Talent Tracks",
     category: "Web Development",
-    image: "/placeholder.svg?height=200&width=300",
-    githubUrl: "https://github.com/example/cocktailsdb"
+    image: "/Talent.png?height=200&width=300",
+    githubUrl: "https://github.com/MohammedYaseenRon/TalentTrack"
   },
   {
     id: 3,
-    name: "Pixorama - Social Media Clone",
+    name: "Fitness",
     category: "Web Development",
-    image: "/placeholder.svg?height=200&width=300",
-    githubUrl: "https://github.com/example/pixorama"
+    image: "/FrontendFit.png?height=200&width=300",
+    githubUrl: "https://github.com/MohammedYaseenRon/fitness-frontend"
   }
 ]
 
@@ -37,12 +37,12 @@ export const ProjectCard = ()=> {
   const [hoveredId, setHoveredId] = useState<number | null>(null)
 
   return (
-    <div className=" h-[367px] flex flex-row justify-center p-4">
+    <div className=" h-[300px] flex flex-row justify-center p-4 gap-4">
       
         {projects.map((project) => (
           <div
             key={project.id}
-            className="relative  w-[264px] overflow-hidden rounded-lg transition-all duration-300 ease-in-out"
+            className="relative w-[264px] overflow-hidden rounded-lg transition-all duration-300 ease-in-out"
             onMouseEnter={() => setHoveredId(project.id)}
             onMouseLeave={() => setHoveredId(null)}
           >

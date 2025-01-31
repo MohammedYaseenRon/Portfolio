@@ -12,23 +12,23 @@ export const Navbar = () => {
           }>About
         </NavLink>
         <NavLink
+          to="/skill"
+          className={({ isActive }) =>
+            isActive ? "text-[#ffbb5c]" : "text-white hover:text-[#b3b3b3]"
+          }>Skills
+        </NavLink>
+        <NavLink
+          to="/experience"
+          className={({ isActive }) =>
+            isActive ? "text-[#ffbb5c]" : "text-white hover:text-[#b3b3b3]"
+          }>Experience
+        </NavLink>
+        <NavLink
           to="/projects"
           className={`${location.pathname === "/projects" || location.pathname === "/"
             ? "text-yellow-500" :
             "text-white hover:text-[#b3b3b3]"
             }`}>Projects
-        </NavLink>
-        <NavLink
-          to="/resume"
-          className={({ isActive }) =>
-            isActive ? "text-[#ffbb5c]" : "text-white hover:text-[#b3b3b3]"
-          }>Resume
-        </NavLink>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive ? "text-[#ffbb5c]" : "text-white hover:text-[#b3b3b3]"
-          }>Contact
         </NavLink>
       </nav>
     </>

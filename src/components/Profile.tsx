@@ -12,7 +12,7 @@ export const Profile= ()=>{
                     <h1 className='text-center'>Ron</h1> 
                 </div>
                 <div className='h-[28px] w-[150px] mt-3.5 mb-0 text-white bg-[#2b2b2c] rounded-lg text-xs font-normal flex justify-center items-center'>
-                    Software Devloper
+                   Full Stack Developer
                 </div>
             </div>
         </div>
