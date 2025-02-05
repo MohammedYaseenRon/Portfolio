@@ -1,9 +1,9 @@
 import { Header } from "./Header"
-import { Trophy,Gamepad, Book } from "lucide-react"
+import { Trophy, Gamepad, Book } from "lucide-react"
 
 export const About = () => {
   return (
-    <div className="pt-8 pl-7 space-y-6">
+    <div className="p-4 md:pt-8 sm:pt-4 md:pl-7 space-y-6">
       <Header title="About Me" />
 
       <div>
@@ -28,7 +28,7 @@ export const About = () => {
         </ul>
       </div>
       <div>
-        <h4 className="text-xl font-semibold mb-4 flex items-center">
+        <h4 className="text-lg md:text-xl font-semibold mb-4 flex items-center">
           <Gamepad className="mr-2 text-purple-400" />
           Beyond Coding
         </h4>
@@ -39,12 +39,12 @@ export const About = () => {
         </p>
       </div>
       <div>
-        <h4 className="text-xl font-semibold mb-4 flex items-center">
+        <h4 className="text-lg md:text-xl font-semibold mb-4 flex items-center">
           <Book className="mr-2 text-blue-400" />
           Continuous Learning
         </h4>
-        <p className="text-base text-white/70">
-          I'm committed to lifelong learning. Currently, I'm started learning Artifical Intelligence Machine Learning and 
+        <p className="text-sm md:text-base text-white/70">
+          I'm committed to lifelong learning. Currently, I'm started learning Artifical Intelligence Machine Learning and
           techniques and contributing to open-source projects to sharpen my skills and give back to the developer
           community.
         </p>
