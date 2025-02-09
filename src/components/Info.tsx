@@ -10,7 +10,7 @@ export const Info = ({ children, label, value }: InfoProps) => {
   return <div className={`w-full h-12 mt-[30px] flex flex-row justify-between`}>
 
 
-    <div className="relative icon-box w-12 h-12 flex items-center justify-center rounded-xl bg-custom-gradient shadow-custom-soft z-1">
+    <div className="relative icon-box w-12 h-12 flex items-center justify-center rounded-xl bg-custom-gradient shadow-custom-soft">
       <div className='w-[18px] h-[18px] '>
         {children}
       </div>

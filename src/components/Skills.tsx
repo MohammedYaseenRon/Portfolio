@@ -11,9 +11,15 @@ import {
     SiDocker,
     SiNextdotjs,
     SiPrisma,
+    SiHtml5,
+    SiCss3,
+    SiTailwindcss,
 } from "react-icons/si"
 
 const skills = [
+    { name: "HTML5", icon: SiHtml5, color: "text-orange-600" },
+    { name: "CSS3", icon: SiCss3, color: "text-blue-600" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "text-[#38B2AC]" }, 
     { name: "JavaScript", icon: SiJavascript, color: "text-yellow-400" },
     { name: "TypeScript", icon: SiTypescript, color: "text-blue-600" },
     { name: "React", icon: SiReact, color: "text-cyan-400" },
@@ -29,7 +35,7 @@ const skills = [
 
 export default function Skills() {
     return (
-        <div className="pt-8 pl-7">
+        <div className="pt-8 p-4">
             <Header title="Skills"></Header>
             <div>
                 <h1 className="text-3xl font-bold text-white mb-12">Full Stack Development</h1>
